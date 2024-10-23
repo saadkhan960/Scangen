@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.scangen"
+    compileSdk = 34
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17 // Ensure this is Java 17
+        targetCompatibility = JavaVersion.VERSION_17 // Ensure this is Java 17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17' // Ensure this is JVM target 17
+    }
+
+    defaultConfig {
+        applicationId = "com.example.scangen"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Enabling ProGuard
+            minifyEnabled true // Enable code shrinking and obfuscation
+            shrinkResources true // Enable resource shrinking
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            // Signing config for release, ensure to set your own signing key when ready
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
