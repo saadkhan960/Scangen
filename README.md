@@ -1,16 +1,18 @@
-# scangen
+# Scangen
 
-A new Flutter project.
+**Scangen** is a Flutter application for scanning and generating QR codes and barcodes. It provides a user-friendly interface for real-time scanning and allows users to view and manage barcode data efficiently.
+
+## Features
+
+- **Real-time Scanning**: Use your device's camera to scan QR codes and barcodes instantly.
+- **Barcode Generation**: Generate custom QR codes based on user input.
+- **User-Friendly Interface**: Easy navigation with intuitive controls.
+- **Efficient State Management**: Built with GetX for smooth performance and state management.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with Scangen, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your_username/scangen.git
